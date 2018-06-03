@@ -74,5 +74,10 @@ namespace vRaid
         {
             raidCalcul();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

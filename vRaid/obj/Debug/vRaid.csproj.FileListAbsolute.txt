@@ -1,0 +1,9 @@
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.csprojResolveAssemblyReference.cache
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.Form1.resources
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.Properties.Resources.resources
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.csproj.GenerateResource.cache
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.csproj.CoreCompileInputs.cache
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\bin\Debug\vRaid.exe
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\bin\Debug\vRaid.pdb
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.exe
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Debug\vRaid.pdb
