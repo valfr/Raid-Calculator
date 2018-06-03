@@ -1,11 +1,16 @@
 # Raid-Calculator
 Offline RAID Calculator for Windows
-
-Version 1.O
-
 Free - No ads
 
+Version 1.0
+
 @join to improve
+
+
+*** CHANGELOG ***
+
+1.0 
+Add : new app
 
 
 /enjoy
