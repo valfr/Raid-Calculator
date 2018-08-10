@@ -27,6 +27,7 @@ namespace vRaid
             disksSize = 0;
             labelArraySize.Text = "";
             labelUsableSpace.Text = "";
+            sizeUnit.Text = "";
         }
         
         void raidCalcul()
@@ -43,18 +44,58 @@ namespace vRaid
                 {
                     if(disksCount >=3)
                     {
-                        int t = (disksCount-1) * disksSize;
+                        decimal t = (disksCount-1) * disksSize;
                         float tt = (float)t / (float)1.073741824;
                         decimal ttt = Math.Round((Decimal)tt, 2, MidpointRounding.AwayFromZero);
+                        // UNIT pre-converter
+                        if(t > 1000 && ttt > 1000)
+                        {
+                            t = t / 1000;
+                            ttt = ttt / 1000;
+                        }
                         labelArraySize.Text = t.ToString();
-                        labelUsableSpace.Text = ttt.ToString();
+                        labelUsableSpace.Text = Math.Round(ttt, 2, MidpointRounding.AwayFromZero).ToString();
                     }
                     else
                     {
                         labelArraySize.Text = "Raid 5 minimum disks are 3";
                     }
                 }
-                
+
+                detectUnit();
+            }
+        }
+
+        void detectUnit()
+        {
+            // des GO ?
+            if(disksSize.ToString().Length == 3)
+            {
+                sizeUnit.Text = "Go";
+                if (labelArraySize.Text.Length > 3)
+                {
+                    labelArraySize.Text += " To";
+                    labelUsableSpace.Text += " To";
+                }
+                else
+                {
+                    labelArraySize.Text += " Go";
+                    labelUsableSpace.Text += " Go";
+                }
+            } 
+            // des TB (full longueur)
+            else if (disksSize.ToString().Length == 4)
+            {
+                sizeUnit.Text = "Go";
+                labelArraySize.Text += " To";
+                labelUsableSpace.Text += " To";
+            }
+            // des TB (petite longueur)
+            else if (disksSize.ToString().Length == 1)
+            {
+                sizeUnit.Text = "To";
+                labelArraySize.Text += " To";
+                labelUsableSpace.Text += " To";
             }
         }
 

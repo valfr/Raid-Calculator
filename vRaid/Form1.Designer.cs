@@ -41,6 +41,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.sizeUnit = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +58,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.sizeUnit);
             this.groupBox1.Controls.Add(this.comboBoxRaidLevel);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.labelUsableSpace);
@@ -174,6 +178,25 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Number of disks";
             // 
+            // sizeUnit
+            // 
+            this.sizeUnit.AutoSize = true;
+            this.sizeUnit.Location = new System.Drawing.Point(307, 106);
+            this.sizeUnit.Name = "sizeUnit";
+            this.sizeUnit.Size = new System.Drawing.Size(13, 13);
+            this.sizeUnit.TabIndex = 13;
+            this.sizeUnit.Text = "?";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(324, 243);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 7);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "1.1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +229,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label sizeUnit;
+        private System.Windows.Forms.Label label7;
     }
 }
 
