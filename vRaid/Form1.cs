@@ -28,6 +28,7 @@ namespace vRaid
             labelArraySize.Text = "";
             labelUsableSpace.Text = "";
             sizeUnit.Text = "";
+            this.AcceptButton = button1;
         }
         
         void raidCalcul()
@@ -38,7 +39,27 @@ namespace vRaid
                 // selection du niveau de raid
                 if(comboBoxRaidLevel.Text == "Raid 1")
                 {
-
+                    // verif si nombre pair ? 
+                    if (disksCount == 2)
+                    {
+                        decimal t = disksSize;
+                        float tt = (float)t / (float)1.073741824;
+                        decimal ttt = Math.Round((Decimal)tt, 2, MidpointRounding.AwayFromZero);
+                        // UNIT pre-converter
+                        if (t > 1000 && ttt > 1000)
+                        {
+                            t = t / 1000;
+                            ttt = ttt / 1000;
+                        }
+                        labelArraySize.Text = t.ToString();
+                        labelUsableSpace.Text = Math.Round(ttt, 2, MidpointRounding.AwayFromZero).ToString();
+                    }
+                    else
+                    {
+                        labelArraySize.Text = "Use 2 disks for RAID 1";
+                        labelArraySize.ForeColor = Color.Red;
+                        return;
+                    }
                 }
                 else if (comboBoxRaidLevel.Text == "Raid 5")
                 {
@@ -58,7 +79,9 @@ namespace vRaid
                     }
                     else
                     {
-                        labelArraySize.Text = "Raid 5 minimum disks are 3";
+                        labelArraySize.Text = "3 disks minimum for RAID 5";
+                        labelArraySize.ForeColor = Color.Red;
+                        return;
                     }
                 }
 

@@ -7,3 +7,8 @@ E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.csproj.CoreCompileInp
 E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.exe
 E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.pdb
 E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.csprojResolveAssemblyReference.cache
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\bin\Release\vRaid.exe.manifest
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\bin\Release\vRaid.application
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.TrustInfo.xml
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.exe.manifest
+E:\Dev\RAID calculator\vRAID\vRaid\vRaid\obj\Release\vRaid.application

@@ -195,7 +195,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(14, 7);
             this.label7.TabIndex = 14;
-            this.label7.Text = "1.1";
+            this.label7.Text = "1.2";
             // 
             // Form1
             // 
